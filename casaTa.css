@@ -1,0 +1,737 @@
+@keyframes play_state {
+  0%,
+  40%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  :root {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Noto Sans";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #9a5022;
+    width: 100%;
+    height: 5rem;
+    opacity: 0.8;
+  }
+
+  .nav {
+    margin: 0;
+    padding: 0;
+    display: block !important;
+  }
+
+  #logo {
+    position: absolute;
+    top: 1.5%;
+    left: 2%;
+    width: 150px;
+    height: 120px;
+  }
+
+  .nav-item {
+    list-style-type: none;
+    float: left;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .nav-link {
+    color: #e4b467;
+    text-decoration-line: none;
+    padding-left: 8rem;
+  }
+
+  .background {
+    background-image: url("assets/M&M_8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+    width: 100%;
+    opacity: 0.7;
+    margin-bottom: 5rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .about-us {
+    text-align: center;
+    animation: play_state 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * 2);
+    animation-play-state: running;
+  }
+
+  #title-casa {
+    color: #e4b467;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .about-us > p {
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .location {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  #location-title {
+    color: #e4b467;
+  }
+
+  .short-location-descr {
+    font-size: 2rem;
+    color: grey;
+  }
+
+  iframe {
+    margin-top: 2rem;
+    width: 100%;
+    height: 13rem;
+  }
+
+  footer {
+    background-color: #ebd6b3;
+    height: 15rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  #links {
+    color: #e4b467;
+  }
+
+  .main-footer > a {
+    text-decoration: none;
+    color: #9a5022;
+  }
+
+  .copyright {
+    background-color: black;
+    margin-top: 2rem;
+  }
+
+  .copyright p {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  #form-title {
+    color: #e4b467;
+  }
+
+  .input-control {
+    background-color: #9a5022;
+    height: 5.5rem;
+  }
+
+  #name {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  #phone {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  #email {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  .validation {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    background-color: greenyellow;
+  }
+
+  #contact-me {
+    text-align: center;
+  }
+
+  #contact-me > p,
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 1rem;
+    font-family: "Noto Sans";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #9a5022;
+    width: 100%;
+    height: 12rem;
+  }
+
+  #logo {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    width: 150px;
+    height: 120px;
+  }
+
+  .nav-link {
+    color: #e4b467;
+    text-decoration-line: none;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .nav-item {
+    list-style-type: none;
+  }
+
+  .icon {
+    background: black;
+    display: block;
+  }
+
+  .fa-bars {
+    position: absolute;
+    left: 80%;
+    top: 6%;
+  }
+
+  .nav-link:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .background {
+    background-image: url("assets/M&M_8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    opacity: 0.7;
+    margin-bottom: 5rem;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  #title-casa {
+    color: #e4b467;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .about-us > p {
+    margin: 0 0 0 20px;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+  }
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 2.5rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .location {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  #location-title {
+    color: #e4b467;
+  }
+
+  .short-location-descr {
+    font-size: 2rem;
+    color: grey;
+  }
+
+  iframe {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  footer {
+    background-color: #ebd6b3;
+    height: 16rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  #links {
+    color: #e4b467;
+  }
+
+  .main-footer > a {
+    text-decoration: none;
+    color: #9a5022;
+  }
+
+  .copyright {
+    background-color: black;
+  }
+
+  .copyright p {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  #form-title {
+    color: #e4b467;
+  }
+
+  .input-control {
+    background-color: #9a5022;
+    height: 5.5rem;
+  }
+
+  #name {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  #phone {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  #email {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  .validation {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    background-color: greenyellow;
+  }
+
+  #contact-me {
+    text-align: center;
+  }
+
+  #contact-me > p,
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  :root {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Noto Sans";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #9a5022;
+    width: 100%;
+    height: 3rem;
+    opacity: 0.8;
+  }
+
+  .nav {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  #logo {
+    position: absolute;
+    top: 1.5%;
+    left: 2%;
+    width: 150px;
+    height: 120px;
+  }
+
+  .nav-item {
+    list-style-type: none;
+    float: left;
+  }
+
+  .nav-link {
+    color: #e4b467;
+    text-decoration-line: none;
+    padding-left: 2rem;
+    font-size: 0.7rem;
+  }
+
+  .background {
+    background-image: url("assets/M&M_8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 63rem;
+    width: 100%;
+    opacity: 0.7;
+    transition: all 4s;
+  }
+
+  .icon {
+    background: black;
+    display: block;
+  }
+
+  .fa-bars {
+    position: absolute;
+    left: 80%;
+    top: 4%;
+  }
+
+  .about-us {
+    text-align: center;
+    animation: play_state 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * 2);
+    animation-play-state: running;
+  }
+
+  #title-casa {
+    color: #e4b467;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  .about-us > p {
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .location {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  #location-title {
+    color: #e4b467;
+  }
+
+  .short-location-descr {
+    font-size: 2rem;
+    color: grey;
+  }
+
+  iframe {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  footer {
+    background-color: #ebd6b3;
+    height: 15rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  #links {
+    color: #e4b467;
+  }
+
+  .main-footer > a {
+    text-decoration: none;
+    color: #9a5022;
+  }
+
+  .copyright {
+    background-color: black;
+    margin-top: 2rem;
+  }
+
+  .copyright p {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  #form-title {
+    color: #e4b467;
+  }
+
+  .input-control {
+    background-color: #9a5022;
+    height: 5.5rem;
+  }
+
+  #name {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  #phone {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  #email {
+    width: 7rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  .validation {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    background-color: greenyellow;
+  }
+
+  #contact-me {
+    text-align: center;
+  }
+
+  #contact-me > p,
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+  }
+}

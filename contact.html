@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="casaTa.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="validation.js"></script>
+    <title>M&M Casa</title>
+  </head>
+  <body>
+    <!-- For Desktop -->
+    <nav class="menu-links">
+      <img src="assets/M & M CASA.png" id="logo" alt="Logo" />
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="casaTa.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact us</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="hambMenu()">
+        <i class="fa fa-bars" style="font-size: 48px; color: black"></i>
+      </a>
+    </nav>
+
+    <form class="form" name="myForm" action="/" method="post">
+      <h1 id="form-title">Registration</h1>
+      <div class="input-control">
+        <label for="name">Full name:</label>
+        <br />
+        <input type="text" id="name" name="name" required />
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="phone">Phone number:</label>
+        <br />
+        <input type="tel" id="phone" name="phone" />
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="email">Email address:</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          oninput="validateEmailInput()"
+          required
+        />
+        <span id="emailFeedback" style="color: red"></span>
+        <div class="error"></div>
+        <button type="submit" class="validation">Send</button>
+      </div>
+    </form>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8068956.703712015!2d119.24517114999999!3d9.071028666471623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3255ab6d82ec7e01%3A0xb2bdc633b6cec773!2sM%26M%20CASA!5e0!3m2!1sro!2sph!4v1724389846414!5m2!1sro!2sph"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <section id="contact-me">
+      <p>
+        <a href="mailto:merlyn.buztwo@gmail.com">merlyn.buztwo@gmail.com</a>
+      </p>
+      <p><a href="tel:09304557450">0930-4557450 (Smart)</a></p>
+      <p><a href="tel:09171185491">0917-1185491 (Globe)</a></p>
+    </section>
+
+    <footer>
+      <div class="main-footer">
+        <h1 id="links">Social Media Links:</h1>
+        <a href="https://www.facebook.com/merlyn.solibio.5?mibextid=ZbWKwL"
+          >Lynz Palanas</a
+        >
+        <br />
+        <a href="https://www.tiktok.com/@lynz1433?_t=8p5AnVBIcau&_r=1"
+          >lynz1433</a
+        >
+      </div>
+      <div class="copyright">
+        <p>&copy; M & M Casa</p>
+      </div>
+    </footer>
+
+    <script>
+      function hambMenu() {
+        var x = document.querySelector(".nav");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/3f00c7b6-694c-4a09-9007-f3314a6ba9a8/webchat/v2.1/config.js"></script>
+  </body>
+</html>
