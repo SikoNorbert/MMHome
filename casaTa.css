@@ -37,23 +37,22 @@
 
   #logo {
     position: absolute;
-    top: 1.5%;
+    top: 6.5%;
     left: 2%;
-    width: 150px;
-    height: 120px;
+    width: 270px;
+    height: 130px;
   }
 
   .nav-item {
     list-style-type: none;
     float: left;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
+    padding-top: 1.8rem;
   }
 
   .nav-link {
     color: #e4b467;
     text-decoration-line: none;
-    padding-left: 8rem;
+    padding-left: 4rem;
   }
 
   .background {
@@ -275,6 +274,7 @@
 
   .nav {
     display: block;
+    margin-left: 2rem;
   }
 
   .menu-links {
@@ -290,7 +290,7 @@
     position: absolute;
     top: 3%;
     left: 5%;
-    width: 80px;
+    width: 120px;
     height: 100px;
   }
 
@@ -299,7 +299,7 @@
     text-decoration-line: none;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     display: block;
   }
 
@@ -327,10 +327,10 @@
     background-image: url("assets/M&M_8.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 20rem;
+    height: 15rem;
     width: 100%;
     opacity: 1;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 1rem;
   }
 
@@ -338,7 +338,7 @@
     display: block;
     width: 90%;
     margin-left: 1rem;
-    height: 70rem;
+    height: 75rem;
   }
 
   .about-us {
@@ -543,7 +543,7 @@
 
   .nav {
     display: block;
-    padding: 0;
+    padding-top: 0.5rem;
     margin: 0;
   }
 
@@ -563,7 +563,7 @@
   .nav-link {
     color: #e4b467;
     text-decoration-line: none;
-    padding-left: 2rem;
+    padding-left: 0.5rem;
     font-size: 0.7rem;
   }
 
@@ -576,6 +576,7 @@
     opacity: 1;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    margin-left: 1rem;
   }
 
   #casa {
@@ -611,7 +612,7 @@
   .fa-bars {
     position: absolute;
     left: 90%;
-    top: 4%;
+    top: 6%;
   }
 
   #title-casa {
